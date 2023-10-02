@@ -7,9 +7,9 @@ PESI =
         GENDER = MALE 10 + 
 
         //CMBD
-        HX_CANCER = TRUE 30 +
-        HX_HF = TRUE 10 +
-        HX_COPD = TRUE 10 + 
+        CANCER = TRUE 30 +
+        HF = TRUE 10 +
+        COPD = TRUE 10 + 
         DELRIUM = TRUE 60 + 
 
         //PHYS
