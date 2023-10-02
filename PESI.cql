@@ -6,7 +6,7 @@ PESI =
         AGE_IN_YEARS +
         GENDER = MALE 10 + 
 
-        //COMORBIDITY 
+        //CMBD
         HX_CANCER = TRUE 30 +
         HX_HF = TRUE 10 +
         HX_COPD = TRUE 10 + 
