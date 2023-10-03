@@ -21,3 +21,10 @@ PESI =
 
   
 */ 
+
+
+Define "Inpt Encounter" :
+        ["Encounter, Preformed" : "Inpatient Encounter Codes"]
+"Inpt Encounter" Encounter 
+   where Encounter.relevantPeriod during "Measurement Period"
+
