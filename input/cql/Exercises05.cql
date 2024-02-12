@@ -7,11 +7,8 @@ Codes
 Concepts
 Comparison
 Membership Testing
-
-NOTE: Test data for these is located under the Exercises05 library, so
-copy these examples into that library to run them.
 */
-library Exercises05Key
+library Exercises05
 
 using FHIR version '4.0.1'
 
@@ -38,17 +35,13 @@ context Patient
 Given the following gender definition, write a "Patient Gender is Male" definition
 */
 define "Patient Gender": Patient.gender
-define "Patient Gender is Male": Patient.gender = 'male'
 
 /*
 Given the following marital status definition, write a "Patient is Married" definition
 */
 define "Patient Marital Status": Patient.maritalStatus
-define "Patient is Married (=)": Patient.maritalStatus = "Marital Status - Married" // Incorrect, uses equality
-define "Patient is Married (~)": Patient.maritalStatus ~ "Marital Status - Married" // Correct, uses equivalence
 
 /*
 Write a "Married in Martial Status" definition to test whether the
 "Marital Status - Married" code is in the "Marital Status" value set
 */
-define "Married in Marital Status": "Marital Status - Married" in "Marital Status"
