@@ -24,6 +24,7 @@
 
 ## Examples
 
+ - [CMS’s Million Hearts® Model Longitudinal ASCVD Risk Assessment Tool for Baseline 10-Year ASCVD Risk](https://cds.ahrq.gov/cdsconnect/artifact/cmss-million-heartsr-model-longitudinal-ascvd-risk-assessment-tool-baseline-10)
  - [Hypoglycemia Risk](78_HypoglycemiaRisk.cql)
  - [Some Kind of Alcohol Screening](80_PositiveScreens.cql)
  - [Chlamydia Screening](ChlamydiaScreening_CDS.cql)
