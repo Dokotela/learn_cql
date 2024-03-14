@@ -1,0 +1,16 @@
+{
+    "resourceType": "Medication",
+    "id": "med",
+    "status": "active",
+    "code": {
+      "coding": [{
+          "system" : "http://snomed.info/sct",
+          "version" : "2024-03",
+          "code" : "387145002",
+          "display" : "Dobutamine"
+        }
+      ],
+      "text": "Dobutamine"
+    }
+   
+  }

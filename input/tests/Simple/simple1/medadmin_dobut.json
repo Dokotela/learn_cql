@@ -1,0 +1,33 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "medadmin",
+"status" : "completed",
+"subject" : {
+    "reference" : "Patient",
+    "display" : "simple1"
+},
+
+      "contained" : [{
+          "resourceType" : "Medication",
+          "id" : "med", 
+          "status" : "active",
+          "code" : {
+              "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "version" : "2024-03",
+                  "code" : "387145002",
+                  "display" : "Dobutamine"
+              }]
+          }
+      }],
+
+
+  "dosage": {
+      "dose": {
+          "value": 8,
+          "unit": "ml/hr",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/h"
+      }
+  }
+}
