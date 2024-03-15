@@ -1,0 +1,26 @@
+{
+    "resourceType" : "Observation",
+    "id" : "MAP",
+
+    "status" : "final",
+
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8478-0",
+        "display" : "Mean artiral pressure"
+      }],
+      "text" : "MAP"
+    },
+
+    "subject" : {
+      "reference" : "Patient/simple1",
+      "display" : "simple1"
+    },
+
+    "valueQuantity" : {
+      "value" : 70
+  
+    }
+  
+  }

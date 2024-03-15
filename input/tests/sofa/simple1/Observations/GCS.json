@@ -1,0 +1,28 @@
+{
+    "resourceType" : "Observation",
+    "id" : "glasgow",
+
+    "status" : "final",
+
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "9269-2",
+        "display" : "Glasgow coma score total"
+      }],
+      "text" : "Glasgow Coma Scale , (GCS)"
+    },
+
+    "subject" : {
+      "reference" : "Patient/simple1",
+      "display" : "simple1"
+    },
+
+
+    "valueQuantity" : {
+      "value" : 13,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{score}"
+    }
+  
+  }

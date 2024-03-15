@@ -1,0 +1,31 @@
+Executing CQL...
+CQL path: c:\Users\aidan\OneDrive\Desktop\cql\input\cql
+Data path: c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple
+Terminology path: c:\Users\aidan\OneDrive\Desktop\cql\input\vocabulary\valueset
+Patient=Patient(id=simple1)
+map_list=[]
+map=null
+map_score=error
+dobutamine_list=[]
+
+
+Evaluation logs:
+20:18:56.031 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+20:18:56.364 [pool-2-thread-1] WARN  ca.uhn.fhir.parser.LenientErrorHandler - Unknown element 'version:' found while parsing
+elapsed: 0.682 seconds
+
+Executing CQL...
+CQL path: c:\Users\aidan\OneDrive\Desktop\cql\input\cql
+Data path: c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple
+Terminology path: c:\Users\aidan\OneDrive\Desktop\cql\input\vocabulary\valueset
+Patient=Patient(id=simple1)
+map_list=[]
+map=null
+map_score=error
+dobutamine_list=[]
+
+
+Evaluation logs:
+20:21:09.267 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+elapsed: 0.676 seconds
+
