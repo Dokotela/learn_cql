@@ -4,70 +4,41 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 include FHIRCommon version '4.0.1'
-
-valueset Medications : 'http://hl7.org/fhir/ValueSet/medication-codes'
  
-codesystem SNOMEDCT : 'http://snomed.info/sct' version '2024-03'
+codesystem LOINC : 'http://loinc.org' 
 
-code MAP : '1285244000' from SNOMEDCT
-code Dobutamine : '372687004' from SNOMEDCT 
+code UOP : '9187-6' from LOINC
+code sCr : '2148-5' from  LOINC
 
-context Patient
-
-define map_list : [Observation: MAP] P          //This returns a list of MAP values 
-    return 
-       
-      FHIRHelpers.ToQuantity(P.value).value       
-define map : singleton from map_list            //This gets the only element, works in this context since file has one value 
-
-define map_score : 
-      case 
-          when map >= 70 then 0
-          when map < 70 then 1 
-          else 'error'
-      end 
-
-
-
-define dobutamine_list : [MedicationAdministration: Dobutamine] M
-
-      
-         return FHIRHelpers.ToQuantity(M.dosage.dose).value
-
-
-define dobutamine_dose : singleton from dobutamine_list 
-
-//define "dopamine" : [Medication :  ]
-
-//define "epi" : 
-
-//define "norepi" : 
+context Patient 
 
 /*
-define "pressor_score" : 
-        case
-            when dobutamine_dose > 0 then 1
-            else 0  
-
-
-
-define "cvs_score" : 
-        case 
-          map >= 70 then 0
-          map < 70 and pressor_score = 0 then 1 
-          map < 70 and pressor_score > 0 then 1 + pressor_score 
-
-          else 'error'
-        end 
-
+define AllObservations : [Observation]
+define AllMedications : [Medication]
+define AllMediationsAdmins : [MedicationAdministration]
 */
 
+define scr_list : [Observation : sCr] O return FHIRHelpers.ToQuantity(O.value as Quantity).value
+define scr : singleton from scr_list
 
+define uop_list : [Observation : UOP] O return FHIRHelpers.ToQuantity(O.value as Quantity).value
+define uop : singleton from uop_list
 
+define rs_score : 
 
-      
-    
+if uop >= 500 then
+      case 
+          when scr < 1.2 then 0
+          when scr in Interval[1.2,1.9] then 1
+          when scr in Interval[2.0,3.4] then 2
+          when scr in Interval[3.5,4.9] then 3
+          when scr  < 5 then 4 
+          else -100
+      end
 
-
-
-
+else
+      case
+          when uop in Interval [200,499] then 3
+          when uop in Interval [0,199] then 4 
+          else -100 
+      end 

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "T bili",
+
+  "status" : "final",
+
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "33898-8",
+      "display" : "T bili"
+    }],
+    "text" : "T bili"
+  },
+
+  "subject" : {
+    "reference" : "Patient/simple1",
+    "display" : "simple1"
+  },
+
+  "valueQuantity" : {
+    "value" : 1.2
+
+  }
+
+}

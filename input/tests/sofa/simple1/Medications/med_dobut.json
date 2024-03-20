@@ -1,12 +1,11 @@
 {
     "resourceType": "Medication",
-    "id": "med",
+    "id": "dobutamine",
     "status": "active",
     "code": {
       "coding": [{
-          "system" : "http://snomed.info/sct",
-          "version" : "2024-03",
-          "code" : "387145002",
+          "system" : "http://loinc.org", 
+          "code" : "21248-0",
           "display" : "Dobutamine"
         }
       ],

@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "PEEP",
+
+  "status" : "final",
+
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "20075-8",
+      "display" : "PEEP"
+    }],
+    "text" : "PEEP"
+  },
+
+  "subject" : {
+    "reference" : "Patient/simple1",
+    "display" : "simple1"
+  },
+
+  "valueQuantity" : {
+    "value" : 5
+
+  }
+
+}

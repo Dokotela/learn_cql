@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "PFR",
+
+  "status" : "final",
+
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "50982-8",
+      "display" : "PFR"
+    }],
+    "text" : "PF_ratio"
+  },
+
+  "subject" : {
+    "reference" : "Patient/simple1",
+    "display" : "simple1"
+  },
+
+  "valueQuantity" : {
+    "value" : 300
+
+  }
+
+}
