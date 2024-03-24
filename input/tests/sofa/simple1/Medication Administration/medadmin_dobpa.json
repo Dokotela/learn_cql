@@ -1,0 +1,28 @@
+{
+    "resourceType": "MedicationAdministration",
+    "id": "medadmin_dopa",
+    "status": "completed",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "21249-8",
+                "display": "Dopamine"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/simple1"
+    },
+    "effectiveDateTime": "2022-01-01T10:30:00Z",
+    "dosage": {
+        "text": "8 mg",
+    
+        "dose": {
+            "value": 8,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+        }
+    }
+}

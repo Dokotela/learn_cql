@@ -3,29 +3,66 @@ CQL path: c:\Users\aidan\OneDrive\Desktop\cql\input\cql
 Data path: c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple
 Terminology path: c:\Users\aidan\OneDrive\Desktop\cql\input\vocabulary\valueset
 Patient=Patient(id=simple1)
-map_list=[]
-map=null
-map_score=error
+AllObservations=[Observation(id=MAP)]
+AllMedications=[Medication(id=dobutamine)]
+AllMediationsAdmins=[]
+map_list=[70]
+map=70
+map_score=0
 dobutamine_list=[]
 
 
 Evaluation logs:
-20:18:56.031 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
-20:18:56.364 [pool-2-thread-1] WARN  ca.uhn.fhir.parser.LenientErrorHandler - Unknown element 'version:' found while parsing
-elapsed: 0.682 seconds
+10:46:32.312 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+elapsed: 0.445 seconds
 
 Executing CQL...
 CQL path: c:\Users\aidan\OneDrive\Desktop\cql\input\cql
 Data path: c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple
 Terminology path: c:\Users\aidan\OneDrive\Desktop\cql\input\vocabulary\valueset
 Patient=Patient(id=simple1)
-map_list=[]
-map=null
-map_score=error
+AllObservations=[Observation(id=MAP)]
+AllMedications=[Medication(id=dobutamine)]
+AllMediationsAdmins=[]
+map_list=[70]
+map=70
+map_score=0
 dobutamine_list=[]
 
 
 Evaluation logs:
-20:21:09.267 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
-elapsed: 0.676 seconds
+11:21:58.767 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+11:21:58.892 [pool-2-thread-1] WARN  o.opencds.cqf.cql.evaluator.fhir.DirectoryBundler - Error parsing resource c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple\simple1\medadmin_dobut.json: HAPI-1861: Failed to parse JSON encoded FHIR content: HAPI-1859: Content does not appear to be FHIR JSON, first non-whitespace character was: 'N' (must be '{')
+elapsed: 0.613 seconds
+
+Executing CQL...
+CQL path: c:\Users\aidan\OneDrive\Desktop\cql\input\cql
+Data path: c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple
+Terminology path: c:\Users\aidan\OneDrive\Desktop\cql\input\vocabulary\valueset
+Patient=Patient(id=simple1)
+AllObservations=[Observation(id=MAP)]
+AllMedications=[Medication(id=dobutamine)]
+AllMediationsAdmins=[]
+map_list=[70]
+map=70
+map_score=0
+dobutamine_list=[]
+
+
+Evaluation logs:
+07:07:38.730 [pool-2-thread-1] INFO  ca.uhn.fhir.util.VersionUtil - HAPI FHIR version 6.0.1 - Rev 2a70df1a11
+07:07:38.763 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+07:07:38.857 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Searching for ini file in file:///c%3A/Users/aidan/OneDrive/Desktop/cql/input
+07:07:38.857 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Attempting to read ini from path file:///c%3A/Users/aidan/OneDrive/Desktop/cql/ig.ini
+07:07:38.857 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - Initializing ig from ini...
+07:07:38.872 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - fhir-version was not specified in the ini file. Trying FHIR version 4.0.1
+07:07:38.900 [pool-2-thread-1] INFO  o.o.cqf.cql.ls.server.manager.IgContextManager - IGContext Initialized.
+07:07:43.016 [pool-2-thread-1] INFO  ca.uhn.fhir.util.XmlUtil - Unable to determine StAX implementation: java.xml/META-INF/MANIFEST.MF not found
+07:07:44.545 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-resources.xml
+07:07:48.127 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-types.xml
+07:07:48.328 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/profile/profiles-others.xml
+07:07:48.927 [pool-2-thread-1] INFO  c.u.f.c.support.DefaultProfileValidationSupport - Loading structure definitions from classpath: /org/hl7/fhir/r4/model/extension/extension-definitions.xml
+07:07:49.444 [pool-2-thread-1] INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [R4]
+07:07:51.177 [pool-2-thread-1] WARN  o.opencds.cqf.cql.evaluator.fhir.DirectoryBundler - Error parsing resource c:\Users\aidan\OneDrive\Desktop\cql\input\tests\Simple\simple1\medadmin_dobut.json: HAPI-1861: Failed to parse JSON encoded FHIR content: HAPI-1859: Content does not appear to be FHIR JSON, first non-whitespace character was: 'N' (must be '{')
+elapsed: 15.714 seconds
 

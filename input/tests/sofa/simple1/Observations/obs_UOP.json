@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Observation",
+  "id" : "UOP",
+
+  "status" : "final",
+
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "9187-6",
+      "display" : "UOP"
+    }],
+    "text" : "UOP"
+  },
+
+  "subject" : {
+    "reference" : "Patient/simple1",
+    "display" : "simple1"
+  },
+
+  "valueQuantity" : {
+    "value" : 400
+
+  }
+
+}

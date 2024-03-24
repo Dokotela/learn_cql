@@ -1,0 +1,15 @@
+{
+    "resourceType": "Medication",
+    "id": "dopamine",
+    "status": "active",
+    "code": {
+      "coding": [{
+          "system" : "http://loinc.org", 
+          "code" : "21249-8",
+          "display" : "Dopamine"
+        }
+      ],
+      "text": "Dopamine"
+    }
+   
+  }
